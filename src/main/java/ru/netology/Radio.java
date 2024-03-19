@@ -34,21 +34,15 @@ public class Radio {
     }
 
     public void next() {
+        int nextNumberRadio = currentNumberRadio + 1;
+        setCurrentNumberRadio(nextNumberRadio);
 
-        if (currentNumberRadio < 9) {
-            currentNumberRadio = currentNumberRadio + 1;
-        } else {
-            currentNumberRadio = 0;
-        }
     }
 
     public void prev() {
+        int prevNumberRadio = currentNumberRadio - 1;
+        setCurrentNumberRadio(prevNumberRadio);
 
-        if (currentNumberRadio > 0) {
-            currentNumberRadio = currentNumberRadio - 1;
-        } else {
-            currentNumberRadio = 9;
-        }
     }
 
     public void setter() {
@@ -57,18 +51,16 @@ public class Radio {
     }
 
     public void increaseVolume() {
-        if (currentVolumeRadio < 100) {
-            currentVolumeRadio = currentVolumeRadio + 1;
 
-        }
+        int increaseCurrentVolumeRadio = currentVolumeRadio + 1;
+        setCurrentVolume(increaseCurrentVolumeRadio);
+
     }
 
     public void decreaseVolume() {
-        if (currentVolumeRadio > 0) {
-            currentVolumeRadio = currentVolumeRadio - 1;
-        } else {
-            currentVolumeRadio = 0;
-        }
+        int decreaseCurrentVolumeRadio = currentVolumeRadio - 1;
+        setCurrentVolume(decreaseCurrentVolumeRadio);
+
     }
 }
 
