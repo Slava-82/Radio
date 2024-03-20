@@ -4,11 +4,14 @@ public class Radio {
     private int currentNumberRadio;
     private int currentVolumeRadio;
 
+
     int getCurrentNumberRadio() {
+
         return currentNumberRadio;
     }
 
     int getCurrentVolume() {
+
         return currentVolumeRadio;
     }
 
@@ -25,10 +28,10 @@ public class Radio {
 
     public void setCurrentNumberRadio(int newCurrentNumberRadio) {
         if (newCurrentNumberRadio < 0)
-            return;
+            newCurrentNumberRadio = 9;
 
         if (newCurrentNumberRadio > 9)
-            newCurrentNumberRadio = 9;
+            newCurrentNumberRadio = 0;
 
         currentNumberRadio = newCurrentNumberRadio;
     }
@@ -46,7 +49,8 @@ public class Radio {
     }
 
     public void setter() {
-
+        int setter = currentNumberRadio;
+        setCurrentNumberRadio(setter);
 
     }
 
