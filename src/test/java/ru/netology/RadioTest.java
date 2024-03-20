@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 
 public class RadioTest {
 
+
+
     @Test
     public void shouldSetterToRadioZero() {
         Radio radio = new Radio();
@@ -308,4 +310,189 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
+    @Test
+
+    public void shouldSetterToRadio28QuantityNumber30() {
+
+        Radio radio = new Radio(30);
+        radio.setCurrentNumberRadio(28);
+        radio.setter();
+
+        int expected = 28;
+        int actual = radio.getCurrentNumberRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void shouldSetterToRadio29QuantityNumber30() {
+
+        Radio radio = new Radio(30);
+        radio.setCurrentNumberRadio(29);
+        radio.setter();
+
+        int expected = 29;
+        int actual = radio.getCurrentNumberRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void shouldSetterToRadio30QuantityNumber30() {
+
+        Radio radio = new Radio(30);
+        radio.setCurrentNumberRadio(30);
+        radio.setter();
+
+        int expected = 0;
+        int actual = radio.getCurrentNumberRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void shouldSetterToRadio0QuantityNumber30() {
+
+        Radio radio = new Radio(30);
+        radio.setCurrentNumberRadio(0);
+        radio.setter();
+
+        int expected = 0;
+        int actual = radio.getCurrentNumberRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void shouldSetterToRadio1QuantityNumber30() {
+
+        Radio radio = new Radio(30);
+        radio.setCurrentNumberRadio(1);
+        radio.setter();
+
+        int expected = 1;
+        int actual = radio.getCurrentNumberRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void shouldNextToRadio28QuantityNumber30() {
+
+        Radio radio = new Radio(30);
+        radio.setCurrentNumberRadio(28);
+        radio.next();
+
+        int expected = 29;
+        int actual = radio.getCurrentNumberRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void shouldNextToRadio29QuantityNumber30() {
+
+        Radio radio = new Radio(30);
+        radio.setCurrentNumberRadio(29);
+        radio.next();
+
+        int expected = 0;
+        int actual = radio.getCurrentNumberRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void shouldNextToRadio0QuantityNumber30() {
+
+        Radio radio = new Radio(30);
+        radio.setCurrentNumberRadio(0);
+        radio.next();
+
+        int expected = 1;
+        int actual = radio.getCurrentNumberRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void shouldNextToRadio1QuantityNumber30() {
+
+        Radio radio = new Radio(30);
+        radio.setCurrentNumberRadio(1);
+        radio.next();
+
+        int expected = 2;
+        int actual = radio.getCurrentNumberRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void shouldPrevToRadio1QuantityNumber30() {
+
+        Radio radio = new Radio(30);
+        radio.setCurrentNumberRadio(1);
+        radio.prev();
+
+        int expected = 0;
+        int actual = radio.getCurrentNumberRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void shouldPrevToRadio0QuantityNumber30() {
+
+        Radio radio = new Radio(30);
+        radio.setCurrentNumberRadio(0);
+        radio.prev();
+
+        int expected = 29;
+        int actual = radio.getCurrentNumberRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void shouldPrevToRadio29QuantityNumber30() {
+
+        Radio radio = new Radio(30);
+        radio.setCurrentNumberRadio(29);
+        radio.prev();
+
+        int expected = 28;
+        int actual = radio.getCurrentNumberRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+    
+
+    @Test
+
+    public void shouldPrevToRadio28QuantityNumber30() {
+
+        Radio radio = new Radio(30);
+        radio.setCurrentNumberRadio(28);
+        radio.prev();
+
+        int expected = 27;
+        int actual = radio.getCurrentNumberRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+
 }
